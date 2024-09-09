@@ -1,0 +1,168 @@
+*
+{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    min-width: 100vw;
+}
+
+
+.quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px;
+    min-width: 100vw;
+}
+
+.quiz-selection {
+    margin-bottom: 20px;
+}
+
+#showLeaderboardButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startQuizButton:hover, #showLeaderboardButton:hover {
+    background-color: #0056b3;
+}
+
+#leaderboard {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+#quizDropdown
+{
+    width: 200px;
+    height: 30px;
+}
+
+table
+{
+    width: 90vw;
+    border-collapse: collapse;
+    margin: 10px 20px;
+}
+th
+{
+    font-size: 1.2rem;
+    background: gold;
+    color: white;
+}
+td,th
+{
+    border: 1px solid gray;
+    text-align: center;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form
+{
+    width: 40%;
+    margin-left: 20px;
+    display: none;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.delete-btn
+{
+    padding: 7px;
+    background: red;
+    color: white;
+    border: none;
+    width: 100px;
+    font-weight: bold;
+}
+.edit-btn
+{
+    padding: 7px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    width: 100px;
+    font-weight: bold; 
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+p
+{
+    color: red;
+    display: none;
+}
+@media (max-width: 700px) {
+    table td:nth-child(3), 
+    table th:nth-child(3) {
+        display: none;
+    }
+    table td:nth-child(5), 
+    table th:nth-child(5) {
+        display: none;
+    }
+    table
+    {
+        margin: 0;
+    }
+}
+@media (max-width:400px) 
+{
+        table td:nth-child(4), 
+        table th:nth-child(4) {
+            display: none;
+        }   
+}

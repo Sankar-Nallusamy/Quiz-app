@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="CreateQuiz.css">
+</head>
+<body>
+    <div class="create-quiz-page">
+        <header class="header">
+            <h1>Create Quiz</h1>
+            <div class="profile">
+                <span>Admin Name</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="quiz-form">
+                <h2>Quiz Details</h2>
+                <div>
+                    <label for="quizTitle">Quiz Title:</label>
+                    <input type="text" id="quizTitle" name="quizTitle" placeholder="Enter quiz title" required>
+                    <label for="description">Description(Optional): </label>
+                    <textarea id="description"></textarea>
+                    <button id="quiz-btn">Create Quiz</button>
+                </div>
+                <form id="createQuizForm">
+                    <h3>Questions</h3>
+                    <label for="questionText">Question:</label>
+                    <textarea id="questionText" name="questionText" placeholder="Enter the question" rows="4" required></textarea>
+
+                    <label for="option1">Option 1:</label>
+                    <input type="text" id="option1" name="option1" placeholder="Enter option 1" required>
+
+                    <label for="option2">Option 2:</label>
+                    <input type="text" id="option2" name="option2" placeholder="Enter option 2" required>
+
+                    <label for="option3">Option 3:</label>
+                    <input type="text" id="option3" name="option3" placeholder="Enter option 3" required>
+
+                    <label for="option4">Option 4:</label>
+                    <input type="text" id="option4" name="option4" placeholder="Enter option 4" required>
+
+                    <label for="correctAnswer">Correct Answer:</label>
+                    <select id="correctAnswer" name="correctAnswer" required>
+                        <option value="" disabled selected>Select the correct answer</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                        <option value="option4">Option 4</option>
+                    </select>
+
+                    <label for="questionMark">Mark for this question:</label>
+                    <input type="number" id="questionMark" name="questionMark" placeholder="Enter marks" required>
+                    <p id="error">Enter all the fields</p>
+                    <button  id="question-btn">Save Question</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2024 Your Company Name</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Support</a>
+        </footer>
+    </div>
+</body>
+<script src="createQuiz.bundle.js"></script>
+</html>

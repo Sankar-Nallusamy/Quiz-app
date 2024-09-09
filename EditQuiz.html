@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Quiz</title>
+    <link rel="stylesheet" href="EditQuiz.css">
+</head>
+<body> 
+  <header>
+        <h1>Edit Quiz</h1>
+    </header>
+    <div class="quiz-container">
+        <h2>Select Your Quiz</h2>
+        <div class="quiz-selection">
+            <label for="quizDropdown">Choose a quiz:</label>
+            <select id="quizDropdown">
+                <option value="" selected disabled hidden>Select a Quiz</option>
+            </select>
+            <button id="course-delete">Delete This course</button>
+        </div>
+        <h2>Questions</h2>
+        <button id="editButton">View Question</button>
+        <button id="addButton" >Add Question</button>
+        <div>
+            <table>
+                <thead>
+                    <th>S.no</th>
+                    <th>Question</th>
+                    <th>Mark</th>
+                    <th>Action</th>
+                </thead>
+                <tbody id="questions">
+
+                </tbody>
+            </table>
+        </div>
+        <form class="createQuizForm" id="createQuestion">
+            <h3>Questions</h3>
+            <label for="questionText">Question:</label>
+            <textarea id="questionText" name="questionText" placeholder="Enter the question" rows="4" required></textarea>
+    
+            <label for="option1">Option 1:</label>
+            <input type="text" id="option1" name="option1" placeholder="Enter option 1" required>
+    
+            <label for="option2">Option 2:</label>
+            <input type="text" id="option2" name="option2" placeholder="Enter option 2" required>
+    
+            <label for="option3">Option 3:</label>
+            <input type="text" id="option3" name="option3" placeholder="Enter option 3" required>
+    
+            <label for="option4">Option 4:</label>
+            <input type="text" id="option4" name="option4" placeholder="Enter option 4" required>
+    
+            <label for="correctAnswer">Correct Answer:</label>
+            <select id="correctAnswer" name="correctAnswer" required>
+                <option value="" disabled selected>Select the correct answer</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </select>
+    
+            <label for="questionMark">Mark for this question:</label>
+            <input type="number" id="questionMark" name="questionMark" placeholder="Enter marks" required>
+            <p id="add-error">Enter all the details</p>
+            <button id="addForm">Save Question</button>
+        </form>
+        <form class="createQuizForm" id="updateQuestion">
+            <h3>Questions</h3>
+            <label for="questionText">Question:</label>
+            <textarea id="U-questionText" name="questionText" placeholder="Enter the question" rows="4" required></textarea>
+    
+            <label for="option1">Option 1:</label>
+            <input type="text" id="U-option1" name="option1" placeholder="Enter option 1" required>
+    
+            <label for="option2">Option 2:</label>
+            <input type="text" id="U-option2" name="option2" placeholder="Enter option 2" required>
+    
+            <label for="option3">Option 3:</label>
+            <input type="text" id="U-option3" name="option3" placeholder="Enter option 3" required>
+    
+            <label for="option4">Option 4:</label>
+            <input type="text" id="U-option4" name="option4" placeholder="Enter option 4" required>
+    
+            <label for="correctAnswer">Correct Answer:</label>
+            <select id="U-correctAnswer" name="correctAnswer" required >
+                <option value="" disabled selected>Select the correct answer</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+            </select>
+    
+            <label for="questionMark">Mark for this question:</label>
+            <input type="number" id="U-questionMark" name="questionMark" placeholder="Enter marks" required>
+            <p id="error">Enter all the fields</p>
+            <button id="updateForm">Save Question</button>
+        </form>
+    </div>
+</body>
+<script src="EditQuiz.bundle.js"></script>
+</html>

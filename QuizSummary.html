@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Summary</title>
+    <link rel="stylesheet" href="QuizSummary.css">
+</head>
+<body>
+    <header>
+        <h1 id="course-name"></h1>
+        <div>
+            <span class="logout" onclick="sessionStorage.clear();location.href='index.html'">Logout</span>
+            <span id="user-name"></span>
+        </div>
+    </header>
+    <main>
+        <h1 id="score-area"></h1>
+        <button id="leaderboard-btn">Show leader-board</button>
+        <div id="leader-board">
+            <table>
+                <thead>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Score</th>
+                </thead>
+                <tbody id="leader-board-table">
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <button onclick="location.href='QuizPage.html'">Retake Quiz</button>
+            <button onclick="location.href='CourseSelection.html'">Course selection</button>
+        </div>
+    </main>
+</body>
+<script src="QuizSummary.bundle.js"></script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadeboard Management</title>
+    <link rel="stylesheet" href="Leaderboard.css">
+</head>
+<body> 
+  <header>
+        <h1>Leaderboard Management</h1>
+    </header>
+    <div class="quiz-container">
+        <h2>Select Your Quiz</h2>
+        <div class="quiz-selection">
+            <label for="quizDropdown">Choose a quiz:</label>
+            <select id="quizDropdown">
+                <option value="" selected disabled hidden>Select a Quiz</option>
+            </select>
+        </div>
+        <h2>Leaderboard</h2>
+        <button id="showLeaderboardButton" >Show Leaderboard</button>
+
+        <div >
+            <table>
+                <thead>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Course-Name</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </thead>
+                <tbody id="leaderboard">
+
+                </tbody>
+            </table>
+        </div>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <p id="error">Invalid Email</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="score">Score:</label>
+                <input type="number" id="score" name="score" required min="0" max="100">
+            </div>
+            
+            <button id="submit-btn">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="Leaderboard.bundle.js"></script>
+</body>
+</html>

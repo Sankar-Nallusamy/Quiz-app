@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="Admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header light">
+            <h1>Admin Dashboard</h1>
+            <div class="profile">
+                <span style="padding-right: 40px;color: red; font-weight: bold;" onclick="location.href='index.html'">Logout</span>
+                <div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-button">
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="card">
+                <h2>Leaderboard Management</h2>
+                <p>Manage and view the leaderboard for different quizzes.</p>
+                <button onclick="location.href='Leaderboard.html'">View Leaderboard</button>
+                <button onclick="location.href='Leaderboard.html'">Edit Leaderboard</button>
+            </div>
+            <div class="card">
+                <h2>Create and Edit Quiz</h2>
+                <p>Design new quizzes or modify existing ones.</p>
+                <button onclick="location.href='CreateQuiz.html'">Create New Quiz</button>
+                <button onclick="location.href='EditQuiz.html'">Edit Existing Quiz</button>
+            </div>
+        </main>
+
+        <footer class="footer light">
+            <p>© 2024 Your Company Name</p>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Support</a>
+        </footer>
+    </div>
+    <script>
+        const btn=document.getElementById("toggle-button")
+        btn.addEventListener("change",(event)=>
+        {
+            if(event.target.checked)
+            {
+                document.querySelectorAll(".light").forEach((ele)=>{
+                ele.style.background="white";
+                ele.style.color="black"
+                })
+            }
+            else
+            {
+                document.querySelectorAll(".light").forEach((ele)=>{
+                ele.style.background="black";
+                ele.style.color="white"
+                })
+            }
+        }
+    )
+
+    </script>
+</body>
+</html>

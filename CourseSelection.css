@@ -1,0 +1,82 @@
+:root
+{
+    --charcoal:#101820;
+    --bright-yellow:#FEE715
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+header
+{
+    display: flex;
+    width: 96vw;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--charcoal);
+    color: var(--bright-yellow);
+    padding: 0 20px;
+}
+.course-container,.recent-quiz {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
+    gap: 20px;
+    min-width: 90vw;
+    padding: 20px;
+    margin-left: 2%;
+}
+h2
+{
+    margin-left: 20px;
+}
+.course-card {
+    background-color: var(--charcoal);
+    color: var(--bright-yellow);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.course-card:hover {
+    transform: scale(1.05);
+}
+.course-card img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.course-card h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: var(--bright-yellow);
+}
+.course-card p {
+    font-size: 16px;
+    padding: 0 15px;
+    color: var(--bright-yellow);
+    margin-bottom: 15px;
+}
+.course-card button {
+    background:var(--bright-yellow);
+    color: var(--charcoal);
+    font-weight: 800;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+@media (max-width:500px) 
+{
+    h3
+    {
+        display: none;
+    }
+}
